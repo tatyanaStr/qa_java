@@ -21,7 +21,7 @@ Project is created with:
 To run this project:
 
 ```
-$ cd Sprint_4
+$ cd qa_java
 $ mvn compile 
 $ mvn clean test
 ```
