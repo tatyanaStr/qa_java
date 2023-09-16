@@ -26,7 +26,7 @@ public class LionTest {
     public void getFoodLionTest() throws Exception {
         var lion = new Lion(feline);
         var foodList = List.of("Животные", "Птицы", "Рыба");
-        Mockito.when(feline.eatMeat()).thenReturn(foodList);
+        Mockito.when(feline.getFood("Хищник")).thenReturn(foodList);
         Assert.assertEquals(foodList, lion.getFood());
     }
 }
