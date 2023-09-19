@@ -27,14 +27,14 @@ public class LionParameterizedTest {
     @Test
     public void getLionSexTest() throws Exception{
 
-        var lion = new Lion(SEX);
+        var lion = new Lion(SEX, null);
         Assert.assertEquals(lion.doesHaveMane(), MANE);
     }
 
     @Test(expected = Exception.class)
     public void getLionSexExceptionTest() throws Exception{
 
-        var lion = new Lion("");
+        var lion = new Lion("", null);
         lion.doesHaveMane();
     }
 }
